@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>BoredAI Games</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <meta name="ToDoApp" content="ToDoapp">
+    <meta charset="utf-8">
+    <title>ToDo App</title>
 </head>
+
 <body>
-	<h1>BoredAI Games</h1>
-	<p>Thank you for choosing BoredAI Games! If you have any questions or need support, please email us at <a href="mailto:joshki1579@gmail.com">joshki1579@gmail.com</a>.</p>
-	<h2>Features:</h2>
-	<ul>
-		<li>Sudoku</li>
-		<li>Tic Tac Toe</li>
-		<li>Gomoku</li>
-		<li>Connect 4</li>
-	</ul>
+    <div id="taskList">
+        <form class="currTask" id="placeholder">
+            <p class="taskDesc"></p>
+            <button type="button" class="cancelB" onclick="deleteB()">X</button>
+            <button type="button" class="completeB" onclick="complete()">&check;</button>
+           
+        </form>
+    </div>
+    <div class="taskCreate">
+        <form class="task">
+            <input type="text" id="input" name="taskDesc" placeholder="task description">
+            <button type="button" class="addB" onclick="add()">+</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
